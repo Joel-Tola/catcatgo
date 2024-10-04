@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cold Noses - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cold Noses - Home</title>
+  <meta name="description"
+    content="Cold Noses is a non-profit organization in Ireland dedicated to providing loving homes for cats in need.">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
@@ -14,11 +17,11 @@
 
   <!-- Header Section -->
   <header>
-    <a href="index.html">
-      <div class="logo">
+    <div class="logo">
+      <a href="index.html">
         <h1>Cold Noses</h1>
-      </div>
-    </a>
+      </a>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -35,80 +38,85 @@
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
-      <h2>Get in Touch with Us</h2>
-      <p>
-        We'd love to hear from you! Whether you have questions about adoption, want to volunteer, or just want to say
-        hello, feel free to reach out.
-      </p>
-
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <form id="contactForm" action="#" method="post" novalidate>
-          <div class="form-group">
-            <label for="name">Name<span>*</span></label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-            <small class="error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="email">Email<span>*</span></label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-            <small class="error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone<span>*</span></label>
-            <input type="text" id="phone" name="phone" placeholder="Phone">
-            <small class="error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="message">Message<span>*</span></label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
-            <small class="error-message"></small>
-          </div>
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-      </div>
-
-      <!-- Volunteer Information -->
-      <div class="volunteer-info">
-        <h2>Volunteer with Us</h2>
+  <main>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2>Get in Touch with Us</h2>
         <p>
-          Join our team of dedicated volunteers and make a real difference in the lives of cats in need. Contact us to
-          learn more about volunteering opportunities.
+          We'd love to hear from you! Whether you have questions about adoption, want to volunteer, or just want to say
+          hello, feel free to reach out.
         </p>
-        <a href="mailto:volunteer@coldnoses.ie" class="volunteer-button">Email Us to Volunteer</a>
+  
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="name">Name<span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email<span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="Your Email">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone<span>*</span></label>
+              <input type="text" id="phone" name="phone" placeholder="Phone">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message<span>*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+              <small class="error-message"></small>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+  
+        <!-- Volunteer Information -->
+        <div class="volunteer-info">
+          <h2>Volunteer with Us</h2>
+          <p>
+            Join our team of dedicated volunteers and make a real difference in the lives of cats in need. Contact us to
+            learn more about volunteering opportunities.
+          </p>
+          <a href="mailto:volunteer@coldnoses.ie" class="volunteer-button">Email Us to Volunteer</a>
+        </div>
+  
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h2>Contact Details</h2>
+          <p><strong>Email:</strong> info@coldnoses.ie</p>
+          <p><strong>Phone:</strong> +353 1 234 5678</p>
+          <p><strong>Address:</strong> 123 Cat Lane, Dublin, Ireland</p>
+        </div>
+  
+        <!-- Map (Optional) -->
+        <!-- Uncomment the following block if you wish to include a map -->
+         <!-- To use third-party libraries we need to handle cookies. what we are not going to do in this phase of the project -->
+        <!-- <div class="map">
+          <h2>Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11330.472185389666!2d-6.2538012840444!3d53.34435957583505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1728040624643!5m2!1sen!2sie"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> -->
+  
+  
       </div>
+    </section>
+  </main>
 
-      <!-- Contact Details -->
-      <div class="contact-details">
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> info@coldnoses.ie</p>
-        <p><strong>Phone:</strong> +353 1 234 5678</p>
-        <p><strong>Address:</strong> 123 Cat Lane, Dublin, Ireland</p>
-      </div>
-
-      <!-- Map (Optional) -->
-      <!-- Uncomment the following block if you wish to include a map -->
-       <!-- To use third-party libraries we need to handle cookies. what we are not going to do in this phase of the project -->
-      <!-- <div class="map">
-        <h2>Our Location</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11330.472185389666!2d-6.2538012840444!3d53.34435957583505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1728040624643!5m2!1sen!2sie"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div> -->
-
-
-    </div>
-  </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2023 Cold Noses. All rights reserved.</p>
-    <div class="nyan-cat">
-      <img src="./assets/original.gif" alt="Nyan Cat">
+    <div class="container">
+      <p>&copy; 2023 Cold Noses. All rights reserved.</p>
+      <div class="nyan-cat">
+        <img src="./assets/original.gif" alt="https://www.nyan.cat/index.php?cat=original">
+      </div>
     </div>
   </footer>
 

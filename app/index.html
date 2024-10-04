@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cold Noses - Home</title>
+  <meta name="description"
+    content="Cold Noses is a non-profit organization in Ireland dedicated to providing loving homes for cats in need.">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
@@ -12,131 +15,143 @@
 
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <a href="index.html">
+  <main>
+    <!-- Header Section -->
+    <header>
       <div class="logo">
-        <h1>Cold Noses</h1>
+        <a href="index.html">
+          <h1>Cold Noses</h1>
+        </a>
       </div>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="adopt.html" class="active">Adopt</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html" class="active">Adopt</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to Cold Noses</h2>
+        <p>Caring for cats, one cold nose at a time.</p>
+        <button onclick="learnMore()">Learn More</button>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Welcome to Cold Noses</h2>
-      <p>Caring for cats, one cold nose at a time.</p>
-      <button onclick="learnMore()">Learn More</button>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="gallery">
-    <div id="grid" class="image-grid">
-    </div>
-  </section>
-
-  <!-- Introduction Section -->
-  <section class="introduction">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        Cold Noses is a non-profit organization based in Ireland dedicated to providing loving homes for cats in need.
-        We collaborate with various organizations and rescue cats from the streets, ensuring they find a family to call
-        their own.
-      </p>
-    </div>
-  </section>
-
-  <!-- Fun Facts Section -->
-  <section class="fun-facts">
-    <div class="container">
-      <h2>Fun Facts About Cats</h2>
-      <div class="facts-grid">
-        <div class="fact">
-          <h3>How Many Cats Do You Need to Be Happy?</h3>
-          <p>
-            Studies show that owning just one cat can significantly boost your happiness and reduce stress levels.
-            Imagine what two can do!
-          </p>
-        </div>
-        <div class="fact">
-          <br>
-          <h3>Cats and Mental Health</h3>
-          <p>
-            Interacting with cats can lower blood pressure and reduce anxiety, contributing positively to mental health.
-          </p>
-        </div>
-        <div class="fact">
-          <br>
-          <h3>Cats in Ireland</h3>
-          <br>
-          <p>
-            Did you know that thousands of cats are abandoned each year in Ireland? Many of them end up living on the
-            streets without proper care.
-          </p>
-        </div>
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div id="grid" class="image-grid">
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Statistics Section -->
-  <section class="statistics">
-    <div class="container">
-      <h2>Cat Statistics</h2>
-      <div class="stats-grid">
-        <div class="stat">
-          <h3>1000+</h3>
-          <p>Cats rescued by Cold Noses around the world</p>
-        </div>
-        <div class="stat">
-          <a href="https://www.independent.ie/regionals/dublin/dspca-highlight-alarming-increase-in-abandoned-kittens/a1495972401.html"
-            target="_blank">
+    <!-- Introduction Section -->
+    <section class="introduction">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Cold Noses is a non-profit organization based in Ireland dedicated to providing loving homes for cats in need.
+          We collaborate with various organizations and rescue cats from the streets, ensuring they find a family to
+          call
+          their own.
+        </p>
+      </div>
+    </section>
 
-            <h3>700+</h3>
-            <p>Cats abandoned annually in Ireland</p>
-          </a>
-        </div>
-        <div class="stat">
-          <a href="https://www.independent.ie/irish-news/dspca-expects-to-rescue-more-than-1000-cats-this-year-as-it-launches-adoption-drive/a1389815257.html"
-            target="_blank">
-            <h3>2000+</h3>
-            <p>Cats adopted worldwide last year</p>
-          </a>
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+      <div class="container">
+        <h2>Fun Facts About Cats</h2>
+        <div class="facts-grid">
+          <div class="fact">
+            <br>
+            <div class="fact-title">
+              <h3>Cats and Mental Health</h3>
+            </div>
+            <p>
+              Interacting with cats can lower blood pressure and reduce anxiety, contributing positively to mental
+              health.
+            </p>
+          </div>
+          <div class="fact">
+            <div class="fact-title">
+              <h3>How Many Cats Do You Need to Be Happy?</h3>
+            </div>
+            <p>
+              Studies show that owning just one cat can significantly boost your happiness and reduce stress levels.
+              Imagine what two can do!
+            </p>
+          </div>
+          <div class="fact">
+            <br>
+            <div class="fact-title">
+              <h3>Cats in Ireland</h3>
+            </div>
+            <br>
+            <p>
+              Did you know that thousands of cats are abandoned each year in Ireland? Many of them end up living on the
+              streets without proper care.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Call to Action Section -->
-  <section class="call-to-action">
-    <div class="container">
-      <h2>Ready to Make a Difference?</h2>
-      <p>Adopt a cat today and bring joy to your home.</p>
-      <a href="#" class="cta-button">View Cats for Adoption</a>
-    </div>
-  </section>
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <h2>Cat Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <h3>1000+</h3>
+            <p>Cats rescued by Cold Noses around the world</p>
+          </div>
+          <div class="stat">
+            <a href="https://www.independent.ie/regionals/dublin/dspca-highlight-alarming-increase-in-abandoned-kittens/a1495972401.html"
+              target="_blank">
+              <h3>700+</h3>
+              <p>Cats abandoned annually in Ireland</p>
+            </a>
+          </div>
+          <div class="stat">
+            <a href="https://www.independent.ie/irish-news/dspca-expects-to-rescue-more-than-1000-cats-this-year-as-it-launches-adoption-drive/a1389815257.html"
+              target="_blank">
+              <h3>2000+</h3>
+              <p>Cats adopted worldwide last year</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+      <div class="container">
+        <h2>Ready to Make a Difference?</h2>
+        <p>Adopt a cat today and bring joy to your home.</p>
+        <a href="#" class="cta-button">View Cats for Adoption</a>
+      </div>
+    </section>
+  </main>
+
 
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2023 Cold Noses. All rights reserved.</p>
-    <div class="nyan-cat">
-      <img src="./assets/original.gif" alt="Nyan Cat">
+    <div class="container">
+      <p>&copy; 2023 Cold Noses. All rights reserved.</p>
+      <div class="nyan-cat">
+        <img src="./assets/original.gif" alt="https://www.nyan.cat/index.php?cat=original">
+      </div>
     </div>
   </footer>
 
