@@ -797,7 +797,7 @@ nav {
 }
 
 .contact .container {
-    max-width: 1000px;
+    max-width: 35rem;
     margin: 0 auto;
 }
 
@@ -828,6 +828,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .form-group {
