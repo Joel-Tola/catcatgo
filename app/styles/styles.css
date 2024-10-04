@@ -1,5 +1,9 @@
 /* General Styles */
-* {
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, img, small, strong, ol, ul, li,
+form, label, article, footer, header, menu,
+nav, section, audio, video {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
     position: sticky;
     top: 0;
@@ -28,7 +32,7 @@ header a {
 }
 
 .logo h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #fff;
 }
 
@@ -43,7 +47,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 .nav-links a {
@@ -63,12 +67,12 @@ nav {
     cursor: pointer;
     flex-direction: column;
     justify-content: space-between;
-    height: 21px;
+    height: 1.25rem;
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: #fff;
     transition: all 0.3s ease;
 }
@@ -79,7 +83,7 @@ nav {
     /* background-image: url('images/hero-cat.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 150px 20px;
+    padding: 9rem 1.25rem;
     text-align: center;
     color: #fff;
     position: relative;
@@ -100,22 +104,22 @@ nav {
 }
 
 .hero-content h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
 }
 
 .hero-content p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .hero-content button {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
     background: #ff0080;
     color: #fff;
     border: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     cursor: pointer;
     transition: background 0.5s;
 }
@@ -126,31 +130,31 @@ nav {
 
 /* Introduction Section */
 .introduction {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #fff;
     text-align: center;
 }
 
 .introduction .container {
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
 .introduction h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
     color: #ff6f61;
 }
 
 .introduction p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
     color: #333;
 }
 
 /* Fun Facts Section */
 .fun-facts {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #f9f9f9;
 }
 
@@ -160,8 +164,8 @@ nav {
 }
 
 .fun-facts h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     color: #ff6f61;
 }
@@ -174,40 +178,40 @@ nav {
 
 .fact {
     background-color: #fff;
-    padding: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    margin: 0.5rem;
     flex-basis: 30%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
     text-align: center;
 }
 
 .fact h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 .fact p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #333;
 }
 
 /* Statistics Section */
 .statistics {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #fff;
 }
 
 .statistics .container {
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin: 0 auto;
 }
 
 .statistics h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     color: #ff6f61;
 }
@@ -220,21 +224,21 @@ nav {
 
 .stat {
     background-color: #ffde59;
-    padding: 30px;
-    margin: 10px;
+    padding: 2rem;
+    margin: 0.5rem;
     flex-basis: 30%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .stat h3 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 .stat p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #333;
 }
 
@@ -244,39 +248,40 @@ nav {
 
 /* Call to Action Section */
 .call-to-action {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
     text-align: center;
     color: #fff;
 }
 
 .call-to-action .container {
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
 .call-to-action h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .call-to-action p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 .cta-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #ff6f61;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    background-color: #ff0080;
+    color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.5s;
 }
 
 .cta-button:hover {
-    background-color: #f1f1f1;
+    background-color: #ff8c00;
+    cursor: pointer;
 }
 
 /* Gallery */
@@ -288,33 +293,33 @@ nav {
 }
 
 .image-grid img {
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    border-radius: 20px;
+    width: 15.5rem;
+    height: 15.5rem;
+    margin: 0.5rem;
+    border-radius: 1.25rem;
     object-fit: cover;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .image-grid img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
+    box-shadow: 0 0.5rem 1.25rem rgba(255, 140, 0, 0.5);
 }
 
 /* Adopt Section */
 .adopt {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #f5f5f5;
 }
 
 .adopt .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
 .adopt h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     color: #ff6f61;
 }
@@ -327,11 +332,11 @@ nav {
 
 .cat-card {
     background-color: #fff;
-    margin: 15px;
+    margin: 1rem;
     flex-basis: 30%;
     max-width: 30%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
@@ -345,7 +350,7 @@ nav {
 }
 
 .cat-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
 }
 
 .cat-card img {
@@ -356,25 +361,25 @@ nav {
 }
 
 .cat-card h3 {
-    font-size: 24px;
-    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
     color: #333;
 }
 
 .cat-card p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .adopt-button {
     display: inline-block;
-    margin: 15px 0 20px 0;
-    padding: 10px 20px;
+    margin: 1rem 0 1.25rem 0;
+    padding: 0.5rem 1.25rem;
     background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.3s;
 }
 
@@ -384,25 +389,25 @@ nav {
 
 /* Support Section */
 .support {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #fff;
     text-align: center;
 }
 
 .support .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
 .support h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
     color: #ff6f61;
 }
 
 .support p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
     line-height: 1.6;
 }
 
@@ -414,18 +419,18 @@ nav {
 
 .product-card {
     background-color: #f9f9f9;
-    margin: 15px;
+    margin: 1rem;
     flex-basis: 30%;
     max-width: 30%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
 }
 
 .product-card .card-image {
@@ -438,25 +443,25 @@ nav {
 }
 
 .product-card h3 {
-    font-size: 24px;
-    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
     color: #333;
 }
 
 .product-card .price {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .buy-button {
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1.25rem;
     background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.3s;
 }
 
@@ -466,44 +471,45 @@ nav {
 
 /* Donate Section */
 .donate {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #ff6f61;
     color: #fff;
     text-align: center;
 }
 
 .donate .container {
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
 .donate h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .donate p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
 }
 
 .donate-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #ff6f61;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    background-color: #ff0080;
+    color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.5s;
 }
 
 .donate-button:hover {
-    background-color: #f1f1f1;
+    background-color: #ff8c00;
+    cursor: pointer;
 }
 
 /* Responsive Design for Support Page */
-@media (max-width: 1024px) {
+@media (max-width: 101.5rem) {
     .product-card {
         flex-basis: 45%;
         max-width: 45%;
@@ -518,7 +524,7 @@ nav {
 }
 
 /* Responsive Design for Adopt Page */
-@media (max-width: 1024px) {
+@media (max-width: 101.5rem) {
     .cat-card {
         flex-basis: 45%;
         max-width: 45%;
@@ -549,19 +555,19 @@ nav {
     background-color: #fff;
     color: #333;
     margin: 10% auto;
-    padding: 20px;
+    padding: 1.25rem;
     width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+    max-width: 31.25rem;
+    border-radius: 0.5rem;
     position: relative;
 }
 
 .close-button {
     color: #aaa;
     position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 30px;
+    top: 1rem;
+    right: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -572,27 +578,27 @@ nav {
 
 /* About Us Section */
 .about-us {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #f9f9f9;
     color: #333;
 }
 
 .about-us .container {
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin: 0 auto;
 }
 
 .about-us h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: #ff6f61;
 }
 
 .about-us p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 /* Principles Section */
@@ -604,50 +610,50 @@ nav {
 
 .principle {
     flex-basis: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .principle h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #ff6f61;
 }
 
 .principle p, .principle ul {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #666;
 }
 
 .principle ul {
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 /* Our Story Section */
 .our-story {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .our-story h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     color: #ff6f61;
 }
 
 .our-story p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
 }
 
 /* Team Section */
 .team {
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .team h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: #ff6f61;
 }
@@ -661,66 +667,67 @@ nav {
 .team-member {
     flex-basis: 30%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .team-member img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .team-member h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
     color: #333;
 }
 
 .team-member p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
 }
 
 /* Call to Action Section */
 .about-cta {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #ff6f61;
     color: #fff;
     text-align: center;
-    margin-top: 60px;
-    border-radius: 10px;
+    margin-top: 3.75rem;
+    border-radius: 0.5rem;
 }
 
 .about-cta h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     color: #fff;
 }
 
 .about-cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
 }
 
 .about-cta .cta-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #ff6f61;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    background-color: #ff0080;
+    color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.5s;
 }
 
 .about-cta .cta-button:hover {
-    background-color: #f1f1f1;
+    background-color: #ff8c00;
+    cursor: pointer;
 }
 
 /* Responsive Design for About Us Page */
-@media (max-width: 1024px) {
+@media (max-width: 101.5rem) {
     .principle {
         flex-basis: 45%;
     }
@@ -736,30 +743,30 @@ nav {
     }
     .principle, .team-member {
         flex-basis: 100%;
-        max-width: 500px;
+        max-width: 31.25rem;
     }
 }
 
 /* FAQ Section */
 .faq {
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .faq h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: #ff6f61;
 }
 
 .faq-item {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .faq-question {
     width: 100%;
-    padding: 15px;
-    font-size: 18px;
+    padding: 1rem;
+    font-size: 1.125rem;
     text-align: left;
     background-color: #333;
     border: none;
@@ -771,8 +778,8 @@ nav {
 
 .faq-question .plus-minus {
     position: absolute;
-    right: 20px;
-    font-size: 24px;
+    right: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .faq-answer {
@@ -780,18 +787,18 @@ nav {
     overflow: hidden;
     transition: max-height 0.3s ease;
     background-color: #f9f9f9;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 .faq-answer p {
-    padding: 15px 0;
-    font-size: 16px;
+    padding: 1rem 0;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
 /* Contact Section */
 .contact {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -802,26 +809,26 @@ nav {
 }
 
 .contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     color: #ff6f61;
 }
 
 .contact p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
 /* Contact Form */
 .contact-form {
     background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 60px;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1);
+    margin-bottom: 3.75rem;
 }
 
 .contact-form form {
@@ -833,12 +840,12 @@ nav {
 
 .form-group {
     flex-basis: 48%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
     font-weight: 600;
 }
 
@@ -849,9 +856,9 @@ nav {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .form-group textarea {
@@ -859,14 +866,14 @@ nav {
 }
 
 .submit-button {
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     background-color: #ff6f61;
     color: #fff;
     border: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     cursor: pointer;
     transition: background 0.3s;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0 auto;
     display: block;
 }
@@ -878,29 +885,29 @@ nav {
 /* Volunteer Information */
 .volunteer-info {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .volunteer-info h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     color: #ff6f61;
 }
 
 .volunteer-info p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .volunteer-button {
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 2rem;
     transition: background 0.3s;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .volunteer-button:hover {
@@ -910,23 +917,23 @@ nav {
 /* Contact Details */
 .contact-details {
     background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1);
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .contact-details h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     color: #ff6f61;
 }
 
 .contact-details p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .contact-details strong {
@@ -935,19 +942,19 @@ nav {
 
 /* Map Section */
 .map {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .map h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     color: #ff6f61;
 }
 
 .map iframe {
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 /* Responsive Design for Contact Page */
@@ -960,8 +967,8 @@ nav {
 /* Error Message Styles */
 .error-message {
     color: #ff6f61;
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 10.25rem;
+    margin-top: 0.3rem;
     display: none;
 }
 
@@ -974,7 +981,7 @@ nav {
 footer {
     background: linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080);
     text-align: center;
-    padding: 15px;
+    padding: 1rem;
 }
 
 footer p {
@@ -985,11 +992,11 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .hero-content p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .nav-links {
@@ -998,12 +1005,12 @@ footer p {
         width: 100%;
         background-color: #ff6f61;
         position: absolute;
-        top: 70px;
+        top: 4.4rem;
         left: 0;
     }
 
     .nav-links li {
-        margin: 20px 0;
+        margin: 1.25rem 0;
         text-align: center;
     }
 
@@ -1017,7 +1024,7 @@ footer p {
 
     /* Burger Animation */
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-0.3rem, 0.375rem);
     }
 
     .toggle .line2 {
@@ -1025,7 +1032,7 @@ footer p {
     }
 
     .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-0.3rem, -0.375rem);
     }
 
     /* Adjust Grid Layouts */
@@ -1045,7 +1052,7 @@ footer p {
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(3.125rem);
     }
 
     to {
