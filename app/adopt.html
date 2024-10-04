@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cold Noses - Adopt</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <a href="index.html">
+      <div class="logo">
+        <h1>Cold Noses</h1>
+      </div>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html" class="active">Adopt</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Adopt Section -->
+  <section class="adopt">
+    <div class="container">
+      <h2>Meet Our Cats Ready for Adoption</h2>
+      <div class="cats-grid">
+        <!-- Cat Card -->
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_1.jpeg"
+              alt="https://www.pexels.com/photo/white-and-grey-kitten-on-brown-and-black-leopard-print-textile-45201/">
+          </div>
+          <h3>Mittens</h3>
+          <p class="cat-old"><strong>Age:</strong> 2 months</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Dublin</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Meet Mittens, a sweet and playful 2-month-old female cat, currently looking for her forever home
+            in Dublin! With her soft, silky fur and gentle green eyes, Mittens is the perfect companion for anyone
+            seeking a loving, loyal friend. She has a calm and affectionate nature, but don't let that fool you—she
+            loves to chase toys and explore cozy corners. Mittens enjoys quiet cuddles and is always ready to curl up
+            next to you after a day of play. If you're looking for a cat who will bring warmth and joy to your home,
+            Mittens is the one! Could you be the one to give her the love she deserves?</span>
+        </div>
+        <!-- Repeat Cat Cards -->
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_2.jpg"
+              alt="https://www.pexels.com/photo/gray-tabby-cat-lying-on-white-surface-177809/">
+          </div>
+          <h3>Whiskers</h3>
+          <p><strong>Age:</strong> 2 year</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Location:</strong> Cork</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Introducing Whiskers, a charming 2-year-old male cat currently waiting for a loving home in Cork!
+            With his sleek coat and the cutest whiskers you’ve ever seen, this little guy is a bundle of energy and
+            affection. Whiskers is curious and playful, always ready to explore new surroundings or chase after his
+            favorite toys. He’s equally content curling up in a warm spot for some quiet time, making him the perfect
+            balance of fun and relaxation. If you’re searching for a friendly, adventurous companion who will bring joy
+            into your life, Whiskers is the one for you! Could Cork be where he finds his forever family?</span>
+        </div>
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_3.jpg"
+              alt="https://www.pexels.com/photo/european-shorthair-cat-on-a-woven-basket-1543793/">
+          </div>
+          <h3>Luna</h3>
+          <p><strong>Age:</strong> 3 years</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Galway</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Introducing Whiskers, a charming 2-year-old male cat currently waiting for a loving home in Cork!
+            With his sleek coat and the cutest whiskers you’ve ever seen, this little guy is a bundle of energy and
+            affection. Whiskers is curious and playful, always ready to explore new surroundings or chase after his
+            favorite toys. He’s equally content curling up in a warm spot for some quiet time, making him the perfect
+            balance of fun and relaxation. If you’re searching for a friendly, adventurous companion who will bring joy
+            into your life, Whiskers is the one for you! Could Cork be where he finds his forever family?</span>
+        </div>
+        <!-- Add more cat cards as needed -->
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_4.jpg"
+              alt="https://www.pexels.com/photo/close-up-photography-of-sleeping-tabby-cat-1056251/">
+          </div>
+          <h3>Pepper</h3>
+          <p><strong>Age:</strong> 2 years</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Limerick</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Meet Pepper, an adorable 7-month-old kitten with a playful spirit and a heart full of curiosity!
+            Located in Limerick, Pepper is full of youthful energy, always ready to pounce on her favorite toys or
+            explore every nook and cranny of her surroundings. With her soft gray and white fur and bright, inquisitive
+            eyes, she’ll steal your heart in an instant. Though she loves to play, Pepper also enjoys cuddling up after
+            a busy day of adventures. This little one is eager to find a forever home where she can grow and
+            thrive—could you be the one to give Pepper a loving family?</span>
+        </div>
+        <!-- Repeat Cat Cards -->
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_5.jpg" alt="https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/">
+          </div>
+          <h3>Shadow </h3>
+          <p><strong>Age:</strong> 1 year</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Location:</strong> Kilkenny</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Meet Shadow, a sleek and mischievous 1-year-old cat ready to find his forever home in Kilkenny!
+            With his shiny black coat and bright yellow eyes, Shadow is as striking as he is playful. He loves chasing
+            after toys, climbing cat trees, and occasionally sneaking up for a surprise pounce. Though full of energy,
+            Shadow also has a softer side and enjoys curling up for a good nap after a fun day of exploring. He’s the
+            perfect mix of adventure and affection, making him a wonderful companion for anyone looking for a playful
+            and loyal friend. Could Shadow be the one for you?</span>
+        </div>
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_6.jpg"
+              alt="https://www.pexels.com/photo/close-up-photo-of-cute-sleeping-cat-416160/">
+          </div>
+          <h3>Willow </h3>
+          <p><strong>Age:</strong> 4 months</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Waterford</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Say hello to Willow, an adorable 4-month-old kitten full of curiosity and playfulness, ready to
+            find a loving home in Waterford! With her fluffy white and orange coat and wide, innocent eyes, Willow is
+            the epitome of kitten cuteness. She’s always on the move, exploring her surroundings and chasing after
+            anything that catches her attention. But after a fun-filled day, she loves nothing more than to snuggle up
+            and purr softly in your lap. Willow is looking for a family to grow up with and share her endless energy and
+            love. Could she be the purr-fect addition to your home?</span>
+        </div>
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_7.jpg"
+              alt="https://www.pexels.com/photo/close-up-photo-of-yellow-and-white-cat-57416/">
+          </div>
+          <h3>Sunny</h3>
+          <p><strong>Age:</strong> 2 years</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Limerick</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Introducing Sunny, a beautiful 2-year-old female cat with a bright yellow coat and adorable white
+            spots, looking for her forever home in Limerick! Sunny is as cheerful as her name suggests, with a playful
+            and friendly personality that will warm your heart. She loves to chase after her toys, bask in the sunlight,
+            and show off her sweet and gentle side with soft purrs. Sunny is perfect for someone looking for a joyful,
+            affectionate companion who’s always up for both playtime and cuddle sessions. If you're in Limerick, Sunny
+            is ready to light up your life!</span>
+        </div>
+        <!-- Repeat Cat Cards -->
+        <div class="cat-card">
+          <div class="card-image">
+            <img src="assets/adopt_8.jpg" alt="https://www.pexels.com/photo/short-coated-gray-cat-20787/">
+          </div>
+          <h3>Oliver</h3>
+          <p><strong>Age:</strong> 4 year</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Location:</strong> Dublin</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Meet Oliver, a handsome and laid-back 4-year-old male cat in search of his forever home in
+            Dublin! With his soft tabby coat and soulful green eyes, Oliver has a calm and loving personality that makes
+            him an ideal companion. He enjoys lounging in sunny spots, receiving gentle head scratches, and occasionally
+            playing with his favorite toys. Oliver is an independent but affectionate cat, making him a perfect fit for
+            someone looking for a loyal, low-maintenance friend who will always be there for a cozy cuddle. If you're in
+            Dublin and want a gentle soul to share your days, Oliver is ready to be your new best friend!</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-image">
+            <img src="assets/adopt_9.jpg"
+              alt="https://www.pexels.com/photo/photo-of-grey-tabby-kitten-lying-down-2558605/">
+          </div>
+          <h3>Cleo</h3>
+          <p><strong>Age:</strong> 7 months</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Galway</p>
+          <a href="#" class="adopt-button" onclick="openModal(this)">Adopt Me</a>
+          <span hidden>Meet Cleo, a lively and adorable 7-month-old kitten ready to find her forever home in Galway!
+            With her beautiful tortoiseshell coat and bright, curious eyes, Cleo is full of kitten energy and loves to
+            explore her surroundings. She’s playful and fun, always chasing after toys or climbing her cat tree, but she
+            also enjoys snuggling up for some cozy lap time when she's ready to relax. Cleo is looking for a loving home
+            where she can grow and bring joy to her new family. Could you be the one to give this sweet kitten her
+            forever home?</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Cold Noses. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Structure -->
+  <div id="adoptMeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('mittens')">&times;</span>
+      <div id="modalBody">
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
