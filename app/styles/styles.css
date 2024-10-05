@@ -131,16 +131,6 @@ nav {
     position: relative; /* Allows positioning of child elements */
 }
 
-/* Pseudo-element for additional styling inside the hero section */
-.hero::after {
-    content: ''; /* Empty content */
-    position: absolute; /* Absolute positioning for flexibility */
-    top: 0; /* Cover the entire hero section */
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
 /* Content inside the hero section */
 .hero-content {
     position: relative; /* Ensure hero content is on top of the background */
