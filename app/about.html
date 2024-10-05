@@ -6,6 +6,13 @@
   <title>Cold Noses - About Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Learn more about Cold Noses, our mission, vision, and the team dedicated to rescuing cats in Ireland.">
+  <!-- Pictogrammers Free License
+    --------------------------
+    Last Updated: February 1st, 2023
+    This package is released as free, open-source, and GPL friendly by
+    the [Pictogrammers](https://pictogrammers.com/). You may use it
+    for commercial projects, open-source projects, or anything really. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
@@ -18,7 +25,7 @@
   <header>
     <div class="logo">
       <a href="index.html">
-        <h1>Cold Noses</h1>
+        <h1><span class="mdi mdi-cat"></span>Cold Noses</h1>
       </a>
     </div>
     <nav>
@@ -124,7 +131,18 @@
                 <p>You can visit our <a href="adopt.html">Adopt</a> page to see available cats and fill out an adoption application.</p>
               </div>
             </div>
-            <!-- Add more FAQ items as needed -->
+            <div class="faq-item">
+              <button class="faq-question">How can I support?<span class="plus-minus">+</span></button>
+              <div class="faq-answer">
+                <p>You can visit our <a href="support.html">Support</a> page to see options to support.</p>
+              </div>
+            </div>
+            <div class="faq-item"></div>
+              <button class="faq-question">How can I contact?<span class="plus-minus">+</span></button>
+              <div class="faq-answer">
+                <p>You can visit our <a href="contact.html">Contact Us</a> page to see options to support.</p>
+              </div>
+            </div>
           </div>
         </div>
     </section>
@@ -133,15 +151,13 @@
   <!-- Footer Section -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Cold Noses. All rights reserved.</p>
-      <div class="nyan-cat">
-        <img src="./assets/original.gif" alt="https://www.nyan.cat/index.php?cat=original">
-      </div>
+      <p>&copy; 2024 Cold Noses. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/about.js"></script>
 </body>
 
 </html>

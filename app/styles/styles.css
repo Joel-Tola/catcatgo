@@ -1,3 +1,21 @@
+/* Root Variables */
+:root {
+    --primary-color: #ff6f61;
+    --secondary-color: #fff;
+    --background-color: #1a1a1a;
+    --text-color: #333;
+    --accent-color: #ff8a75;
+    --heading-color: #ff6f61;
+    --base-unit: 1rem; /* 16px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-large: 1.5rem; /* 24px */
+    --font-size-xlarge: 2rem; /* 32px */
+    --font-size-xxlarge: 2.5rem; /* 40px */
+    --line-height: 1.6;
+    --breakpoint-sm: 768px;
+    --breakpoint-md: 1024px;
+}
+
 /* General Styles */
 html, body, div, span, iframe,
 h1, h2, h3, h4, h5, h6, p,
@@ -11,8 +29,8 @@ nav, section, audio, video {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
 }
 
 /* Header Styles */
@@ -33,7 +51,7 @@ header a {
 
 .logo h1 {
     font-size: 1.75rem;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 nav {
@@ -52,7 +70,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -73,7 +91,7 @@ nav {
 .burger div {
     width: 1.5rem;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     transition: all 0.3s ease;
 }
 
@@ -85,7 +103,7 @@ nav {
     background-position: center;
     padding: 9rem 1.25rem;
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     position: relative;
 }
 
@@ -117,7 +135,7 @@ nav {
     padding: 1rem 2rem;
     font-size: 1.125rem;
     background: #ff0080;
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     border-radius: 2rem;
     cursor: pointer;
@@ -131,7 +149,7 @@ nav {
 /* Introduction Section */
 .introduction {
     padding: 3.75rem 1.25rem;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     text-align: center;
 }
 
@@ -143,13 +161,13 @@ nav {
 .introduction h2 {
     font-size: 2.25rem;
     margin-bottom: 1.25rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .introduction p {
     font-size: 1.125rem;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Fun Facts Section */
@@ -167,7 +185,7 @@ nav {
     font-size: 2.25rem;
     margin-bottom: 2.5rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .facts-grid {
@@ -177,7 +195,7 @@ nav {
 }
 
 .fact {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding: 1.25rem;
     margin: 0.5rem;
     flex-basis: 30%;
@@ -189,19 +207,19 @@ nav {
 .fact h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .fact p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Statistics Section */
 .statistics {
     padding: 3.75rem 1.25rem;
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .statistics .container {
@@ -213,7 +231,7 @@ nav {
     font-size: 2.25rem;
     margin-bottom: 2.5rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .stats-grid {
@@ -234,12 +252,12 @@ nav {
 .stat h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .stat p {
     font-size: 1.125rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .stat a {
@@ -251,7 +269,7 @@ nav {
     padding: 3.75rem 1.25rem;
     background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .call-to-action .container {
@@ -273,7 +291,7 @@ nav {
     padding: 1rem 2rem;
     font-size: 1.125rem;
     background-color: #ff0080;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.5s;
@@ -321,7 +339,7 @@ nav {
     font-size: 2.25rem;
     margin-bottom: 2.5rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .cats-grid {
@@ -331,7 +349,7 @@ nav {
 }
 
 .cat-card {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin: 1rem;
     flex-basis: 30%;
     max-width: 30%;
@@ -363,7 +381,7 @@ nav {
 .cat-card h3 {
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem 0;
-    color: #333;
+    color: var(--text-color);
 }
 
 .cat-card p {
@@ -376,21 +394,21 @@ nav {
     display: inline-block;
     margin: 1rem 0 1.25rem 0;
     padding: 0.5rem 1.25rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.3s;
 }
 
 .adopt-button:hover {
-    background-color: #ff8a75;
+    background-color: var(--accent-color);
 }
 
 /* Support Section */
 .support {
     padding: 3.75rem 1.25rem;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     text-align: center;
 }
 
@@ -402,7 +420,7 @@ nav {
 .support h2 {
     font-size: 2.25rem;
     margin-bottom: 1.25rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .support p {
@@ -445,7 +463,7 @@ nav {
 .product-card h3 {
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem 0;
-    color: #333;
+    color: var(--text-color);
 }
 
 .product-card .price {
@@ -458,22 +476,22 @@ nav {
     display: inline-block;
     margin-bottom: 1.25rem;
     padding: 0.5rem 1.25rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.3s;
 }
 
 .buy-button:hover {
-    background-color: #ff8a75;
+    background-color: var(--accent-color);
 }
 
 /* Donate Section */
 .donate {
     padding: 3.75rem 1.25rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -497,7 +515,7 @@ nav {
     padding: 1rem 2rem;
     font-size: 1.125rem;
     background-color: #ff0080;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.5s;
@@ -552,8 +570,8 @@ nav {
 }
 
 .modal-content {
-    background-color: #fff;
-    color: #333;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     margin: 10% auto;
     padding: 1.25rem;
     width: 80%;
@@ -580,7 +598,7 @@ nav {
 .about-us {
     padding: 3.75rem 1.25rem;
     background-color: #f9f9f9;
-    color: #333;
+    color: var(--text-color);
 }
 
 .about-us .container {
@@ -592,7 +610,7 @@ nav {
     font-size: 2.25rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .about-us p {
@@ -616,7 +634,7 @@ nav {
 .principle h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .principle p, .principle ul {
@@ -638,7 +656,7 @@ nav {
 .our-story h2 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .our-story p {
@@ -655,7 +673,7 @@ nav {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .team-grid {
@@ -681,7 +699,7 @@ nav {
 .team-member h3 {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .team-member p {
@@ -692,8 +710,8 @@ nav {
 /* Call to Action Section */
 .about-cta {
     padding: 3.75rem 1.25rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     margin-top: 3.75rem;
     border-radius: 0.5rem;
@@ -702,7 +720,7 @@ nav {
 .about-cta h2 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .about-cta p {
@@ -715,7 +733,7 @@ nav {
     padding: 1rem 2rem;
     font-size: 1.125rem;
     background-color: #ff0080;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.5s;
@@ -756,7 +774,7 @@ nav {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .faq-item {
@@ -768,12 +786,12 @@ nav {
     padding: 1rem;
     font-size: 1.125rem;
     text-align: left;
-    background-color: #333;
+    background-color: var(--text-color);
     border: none;
     outline: none;
     cursor: pointer;
     position: relative;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .faq-question .plus-minus {
@@ -800,7 +818,7 @@ nav {
 .contact {
     padding: 3.75rem 1.25rem;
     background-color: #f5f5f5;
-    color: #333;
+    color: var(--text-color);
 }
 
 .contact .container {
@@ -812,7 +830,7 @@ nav {
     font-size: 2.25rem;
     margin-bottom: 1.25rem;
     text-align: center;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .contact p {
@@ -824,7 +842,7 @@ nav {
 
 /* Contact Form */
 .contact-form {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding: 2.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1);
@@ -850,7 +868,7 @@ nav {
 }
 
 .form-group label span {
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .form-group input,
@@ -867,8 +885,8 @@ nav {
 
 .submit-button {
     padding: 1rem 2rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 2rem;
     cursor: pointer;
@@ -879,7 +897,7 @@ nav {
 }
 
 .submit-button:hover {
-    background-color: #ff8a75;
+    background-color: var(--accent-color);
 }
 
 /* Volunteer Information */
@@ -891,7 +909,7 @@ nav {
 .volunteer-info h2 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .volunteer-info p {
@@ -902,8 +920,8 @@ nav {
 
 .volunteer-button {
     padding: 1rem 2rem;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 2rem;
     transition: background 0.3s;
@@ -911,12 +929,12 @@ nav {
 }
 
 .volunteer-button:hover {
-    background-color: #ff8a75;
+    background-color: var(--accent-color);
 }
 
 /* Contact Details */
 .contact-details {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding: 2.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1);
@@ -927,7 +945,7 @@ nav {
 .contact-details h2 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-    color: #ff6f61;
+    color: var(--primary-color);
 }
 
 .contact-details p {
@@ -940,23 +958,6 @@ nav {
     font-weight: 600;
 }
 
-/* Map Section */
-.map {
-    margin-bottom: 3.75rem;
-}
-
-.map h2 {
-    font-size: 2rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
-    color: #ff6f61;
-}
-
-.map iframe {
-    border: 0;
-    border-radius: 0.5rem;
-}
-
 /* Responsive Design for Contact Page */
 @media (max-width: 768px) {
     .form-group {
@@ -966,7 +967,7 @@ nav {
 
 /* Error Message Styles */
 .error-message {
-    color: #ff6f61;
+    color: var(--primary-color);
     font-size: 10.25rem;
     margin-top: 0.3rem;
     display: none;
@@ -974,7 +975,97 @@ nav {
 
 .form-group input.invalid,
 .form-group textarea.invalid {
-    border-color: #ff6f61;
+    border-color: var(--primary-color);
+}
+
+/* 404 Not Found Page Styles */
+.not-found {
+    padding: 4.5rem 0;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.not-found h2 {
+    font-size: var(--font-size-xxlarge);
+    margin-bottom: var(--spacing-unit * 1.25);
+    color: var(--heading-color);
+}
+
+.not-found p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-unit * 1.25);
+    line-height: var(--line-height);
+}
+
+.not-found-image {
+    width: 21rem;
+    height: auto;
+    margin-bottom: var(--spacing-unit * 1.25);
+}
+
+.not-found-buttons .button {
+    margin: var(--spacing-unit * 0.5);
+}
+
+/* The Cube */
+.cube {
+    position: relative;
+    margin: 3rem auto;
+    width: 6.25rem;
+    height: 6.25rem;
+    /* Missing transformation and animation */
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    /* Give the starting position and the ending position for the rotation */
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube .side {
+    position: absolute;
+    padding: 1rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* To make 3D object rotate all the faces */
+/* Matrix transformation */
+.front {
+    transform: translateZ(50px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px)
 }
 
 /* Footer Styles */
@@ -986,7 +1077,7 @@ footer {
 
 footer p {
     margin: 0;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 /* Responsive Design */
@@ -1003,7 +1094,7 @@ footer p {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #ff6f61;
+        background-color: var(--primary-color);
         position: absolute;
         top: 4.4rem;
         left: 0;
@@ -1059,27 +1150,4 @@ footer p {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-/* Nyan Cat Animation */
-.nyan-cat {
-    position: fixed;
-    bottom: 0rem;
-    left: -7rem;
-    animation: nyanCatMove 20s linear infinite;
-}
-
-@keyframes nyanCatMove {
-    0% {
-        left: -7rem;
-    }
-
-    100% {
-        left: 100%;
-    }
-}
-
-.nyan-cat img {
-    width: 5rem;
-    ;
 }
