@@ -1,0 +1,1250 @@
+/* Root Variables */
+/* Define custom CSS variables to be reused throughout the stylesheet. 
+   These variables help with consistency and make future updates easier. */
+   :root {
+    --primary-color: #ff6f61; /* Main accent color for the site */
+    --secondary-color: #fff; /* Secondary color, often used for text and backgrounds */
+    --background-color: #1a1a1a; /* Background color for the body */
+    --text-color: #333; /* Default text color for content */
+    --accent-color: #ff8a75; /* Accent color used for highlighting */
+    --light-accent-color: #f5f5f5; /* Accent color used for light highlighting */
+    --heading-color: #ff6f61; /* Color for headings */
+    --Light-gray-color: #666; /* Color for gray light headings */
+    --hove-button-color: #ff8c00; /* Color for gray light headings */
+    --base-unit: 1rem; /* Base unit for spacing and font size (equivalent to 16px) */
+    --font-size-base: 1rem; /* Default font size */
+    --font-size-large: 1.5rem; /* Large font size for headings or emphasis */
+    --font-size-xlarge: 2rem; /* Extra large font size */
+    --font-size-xxlarge: 2.5rem; /* XXL font size */
+    --line-height: 1.6; /* Line height for readability */
+    --breakpoint-sm: 768px; /* Small screen breakpoint for responsive design */
+    --breakpoint-md: 1024px; /* Medium screen breakpoint */
+}
+
+/* General Styles */
+/* Reset margin, padding, and box-sizing for all common HTML elements. 
+   This creates a clean slate for consistent styling across different browsers. */
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, img, small, strong, ol, ul, li,
+form, label, article, footer, header, menu,
+nav, section, audio, video {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+/* Body Styles */
+/* Define the default font, background, and text colors for the body */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    background-color: var(--background-color); /* Set background color */
+    color: var(--secondary-color); /* Set default text color */
+}
+
+/* Header Styles */
+/* Style the header to stick to the top of the page and use a gradient background */
+header {
+    display: flex; /* Flexbox layout for easy alignment of logo and navigation */
+    justify-content: space-between; /* Space out items (logo on the left, nav on the right) */
+    align-items: center; /* Vertically align items in the center */
+    padding: 1.25rem; /* Padding for spacing inside the header */
+    background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0); /* Gradient background for the header */
+    position: sticky; /* Sticky positioning keeps the header visible when scrolling */
+    top: 0; /* Stick the header to the top of the viewport */
+    z-index: 1000; /* High z-index to ensure header stays on top of other elements */
+}
+
+/* Remove underline from links within the header */
+header a {
+    text-decoration: none;
+}
+
+/* Logo Styles */
+/* Style the logo inside the header */
+.logo h1 {
+    font-size: 1.75rem; /* Slightly larger font size for the logo */
+    color: var(--secondary-color); /* Logo text color matches the rest of the header */
+}
+
+/* Navigation Styles */
+/* Flexbox for horizontal navigation layout */
+nav {
+    display: flex;
+    align-items: center; /* Center-align items vertically */
+}
+
+/* Navigation List Styles */
+/* Style the navigation links inside the header */
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Flexbox layout to align links horizontally */
+}
+
+/* Navigation Links Styles */
+/* Space out the navigation links and apply hover effects */
+.nav-links li {
+    margin-left: 2rem; /* Add spacing between links */
+}
+
+/* Anchor link styles inside the navigation */
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--secondary-color); /* White text for navigation links */
+    font-weight: 600; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for color change on hover */
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color: #ffde59; /* Change link color on hover to yellow */
+}
+
+/* Burger Menu (for mobile) */
+/* Initially hidden; will be shown on smaller screens */
+.burger {
+    display: none; /* Hide the burger menu by default */
+    cursor: pointer; /* Show the pointer cursor to indicate it's clickable */
+    flex-direction: column; /* Stack the burger lines vertically */
+    justify-content: space-between; /* Evenly space the burger lines */
+    height: 1.25rem; /* Set height of the burger container */
+}
+
+/* Individual burger lines (bars) */
+.burger div {
+    width: 1.5rem; /* Set the width of the burger lines */
+    height: 0.2rem; /* Set the height of the burger lines */
+    background-color: var(--secondary-color); /* White burger lines */
+    transition: all 0.3s ease; /* Smooth transition when the burger menu is toggled */
+}
+
+/* Hero Section Styles */
+/* Styles for the main introductory section of the page */
+.hero {
+    background: linear-gradient(135deg, #8a2387, #e94057, #f27121); /* Gradient background for the hero section */
+    /* background-image: url('images/hero-cat.jpg'); */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    padding: 9rem 1.25rem; /* Large padding for spacing around content */
+    text-align: center; /* Center-align text within the hero section */
+    color: var(--secondary-color); /* White text color for readability */
+    position: relative; /* Allows positioning of child elements */
+}
+
+/* Pseudo-element for additional styling inside the hero section */
+.hero::after {
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning for flexibility */
+    top: 0; /* Cover the entire hero section */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Content inside the hero section */
+.hero-content {
+    position: relative; /* Ensure hero content is on top of the background */
+    z-index: 1; /* Set z-index to make content appear above the background */
+}
+
+/* Hero Section Heading */
+.hero-content h2 {
+    font-size: 3rem; /* Large font size for the main heading */
+    margin-bottom: 1.25rem; /* Add spacing below the heading */
+}
+
+/* Hero Section Paragraph */
+.hero-content p {
+    font-size: 1.5rem; /* Large font size for the hero description */
+    margin-bottom: 2rem; /* Add spacing below the paragraph */
+}
+
+/* Hero Section Button */
+.hero-content button {
+    padding: 1rem 2rem; /* Padding for the button */
+    font-size: 1.125rem; /* Button font size */
+    background: #ff0080; /* Button background color */
+    color: var(--secondary-color); /* White text color */
+    border: none; /* Remove default borders */
+    border-radius: 2rem; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor to indicate the button is clickable */
+    transition: background 0.5s; /* Smooth transition for background color on hover */
+}
+
+/* Change button background color on hover */
+.hero-content button:hover {
+    background: var(--hove-button-color); /* Change the button color to orange on hover */
+}
+
+/* Introduction Section Styles */
+.introduction {
+    padding: 3.75rem 1.25rem; /* Padding for spacing inside the introduction section */
+    background-color: var(--secondary-color); /* White background for contrast */
+    text-align: center; /* Center-align content */
+}
+
+/* Introduction section container */
+.introduction .container {
+    max-width: 50rem; /* Limit the width of the content */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Introduction section heading */
+.introduction h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 1.25rem; /* Add spacing below the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+/* Introduction section paragraph */
+.introduction p {
+    font-size: 1.125rem; /* Font size for the paragraph */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: var(--text-color); /* Dark text color for the paragraph */
+}
+/* Fun Facts Section */
+/* Styles for the section that displays fun facts */
+.fun-facts {
+    padding: 3.75rem 1.25rem; /* Generous padding for spacing */
+    background-color: var(--light-accent-color); /* Light background color for contrast */
+}
+
+.fun-facts .container {
+    max-width: 60rem; /* Limit the width of the container for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.fun-facts h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 2.5rem; /* Add space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+.facts-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if needed */
+    justify-content: space-around; /* Evenly distribute items with space between them */
+}
+
+/* Individual fact cards inside the Fun Facts section */
+.fact {
+    color: var(--text-color); /* Dark text color for readability */
+    background-color: var(--secondary-color); /* White background for the fact cards */
+    padding: 1.25rem; /* Padding inside each fact card */
+    margin: 0.5rem; /* Small margin between the fact cards */
+    flex-basis: 30%; /* Set each fact card to take up 30% of the available space */
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 0.5rem; /* Rounded corners for the fact cards */
+    text-align: center; /* Center-align text within the fact cards */
+}
+
+.fact h3 {
+    font-size: 1.5rem; /* Larger font size for the fact titles */
+    margin-bottom: 1rem; /* Add spacing below the title */
+    color: var(--text-color); /* Dark text color for the titles */
+}
+
+.fact p {
+    font-size: 1rem; /* Default font size for the fact text */
+    line-height: 1.5; /* Increased line height for better readability */
+    color: var(--text-color); /* Dark text color for the paragraphs */
+}
+
+/* Statistics Section */
+/* Styles for the statistics section, similar to Fun Facts but with more emphasis */
+.statistics {
+    padding: 3.75rem 1.25rem; /* Padding for the statistics section */
+    background-color: var(--secondary-color); /* White background */
+}
+
+.statistics .container {
+    max-width: 62.5rem; /* Wider container than Fun Facts */
+    margin: 0 auto; /* Center the container */
+}
+
+.statistics h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 2.5rem; /* Add space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+.stats-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if needed */
+    justify-content: space-around; /* Evenly distribute the stats */
+}
+
+/* Individual stat cards inside the Statistics section */
+.stat {
+    background-color: #ffde59; /* Yellow background for emphasis */
+    padding: 2rem; /* Padding inside each stat card */
+    margin: 0.5rem; /* Small margin between the stat cards */
+    flex-basis: 30%; /* Set each stat card to take up 30% of the available space */
+    text-align: center; /* Center-align text inside the stat cards */
+    border-radius: 0.5rem; /* Rounded corners for the stat cards */
+}
+
+.stat h3 {
+    font-size: 2.5rem; /* Larger font size for the statistic value */
+    margin-bottom: 1rem; /* Add space below the statistic value */
+    color: var(--text-color); /* Dark text color for readability */
+}
+
+.stat p {
+    font-size: 1.125rem; /* Slightly larger font size for the description */
+    color: var(--text-color); /* Dark text color for the description */
+}
+
+.stat a {
+    text-decoration: none; /* Remove underline from any links inside the stat card */
+}
+
+/* Call to Action Section */
+/* Styles for the call-to-action (CTA) section */
+.call-to-action {
+    padding: 3.75rem 1.25rem; /* Padding for spacing */
+    background: linear-gradient(135deg, #8a2387, #e94057, #f27121); /* Gradient background for the CTA */
+    text-align: center; /* Center-align content inside the CTA */
+    color: var(--secondary-color); /* White text color for contrast */
+}
+
+.call-to-action .container {
+    max-width: 50rem; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.call-to-action h2 {
+    font-size: 2.25rem; /* Large font size for the heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+}
+
+.call-to-action p {
+    font-size: 1.25rem; /* Slightly larger font size for the description */
+    margin-bottom: 2rem; /* Space below the description */
+}
+
+.cta-button {
+    padding: 1rem 2rem; /* Padding for the button */
+    font-size: 1.125rem; /* Button font size */
+    background-color: #ff0080; /* Initial button background color */
+    color: var(--secondary-color); /* White text color */
+    text-decoration: none; /* Remove underline from the button */
+    border-radius: 2rem; /* Rounded button for a soft look */
+    transition: background 0.5s; /* Smooth transition when the button is hovered */
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    background-color: var(--hove-button-color); /* Change the background color on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Gallery */
+/* Styles for the image gallery */
+.image-grid {
+    display: flex; /* Flexbox for a responsive grid layout */
+    justify-content: center; /* Center-align the images */
+    flex-wrap: wrap; /* Allow the images to wrap to the next line if needed */
+    min-height: 35rem; /* Ensure the gallery has a minimum height */
+}
+
+.image-grid img {
+    width: 15.5rem; /* Set a fixed width for the images */
+    height: 15.5rem; /* Set a fixed height for the images */
+    margin: 0.5rem; /* Add space between the images */
+    border-radius: 1.25rem; /* Rounded corners for the images */
+    object-fit: cover; /* Ensure the images cover the available space without distortion */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Image hover effect */
+.image-grid img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 0.5rem 1.25rem rgba(255, 140, 0, 0.5); /* Add a glowing shadow effect */
+}
+
+/* Adopt Section */
+/* Styles for the main container and layout of the adopt page */
+.adopt {
+    padding: 3.75rem 1.25rem; /* Padding for spacing around the section */
+    background-color: var(--light-accent-color); /* Light gray background color for the adopt section */
+}
+
+.adopt .container {
+    max-width: 75rem; /* Limit the width of the container for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Heading for the adopt section */
+.adopt h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 2.5rem; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+/* Cats Grid */
+/* Flexbox layout for the grid of cat cards */
+.cats-grid {
+    display: flex; /* Use flexbox for the layout */
+    flex-wrap: wrap; /* Allow the cards to wrap to the next line if needed */
+    justify-content: space-around; /* Space the cards evenly */
+}
+
+/* Individual cat cards */
+.cat-card {
+    background-color: var(--secondary-color); /* White background for each card */
+    margin: 1rem; /* Spacing around each card */
+    flex-basis: 30%; /* Each card takes up 30% of the available space */
+    max-width: 30%; /* Maximum width to ensure consistency */
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensure content doesn't overflow the card */
+    text-align: center; /* Center-align the content within the card */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Card image container */
+.card-image {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    max-width: 100%; /* Maintain image aspect ratio */
+    max-height: 14rem; /* Set a maximum height for the image */
+    overflow: hidden; /* Prevent overflow of the image */
+}
+
+/* Hover effect for cat cards */
+.cat-card:hover {
+    transform: translateY(-0.5rem); /* Move the card slightly up on hover for a subtle effect */
+}
+
+/* Image inside the cat card */
+.cat-card img {
+    width: 100%; /* Ensure the image fills the width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Prevent the image from exceeding the card width */
+    max-height: 100%; /* Prevent the image from exceeding the card height */
+}
+
+/* Cat card heading */
+.cat-card h3 {
+    font-size: 1.5rem; /* Font size for the cat's name */
+    margin: 1rem 0 0.5rem 0; /* Spacing above and below the heading */
+    color: var(--text-color); /* Dark text color for readability */
+}
+
+/* Cat card description */
+.cat-card p {
+    font-size: 1rem; /* Standard font size for the description */
+    color: var(--Light-gray-color); /* Light gray color for the description */
+    margin-bottom: 0.5rem; /* Space below the description */
+}
+
+/* Modal Styles */
+/* Base styles for the modal window */
+.modal {
+    display: none; /* Initially hide the modal */
+    position: fixed; /* Keep the modal fixed on the viewport, even when scrolling */
+    z-index: 1001; /* High z-index to ensure the modal stays on top of other elements */
+    left: 0; /* Position the modal to cover the entire screen */
+    top: 0;
+    width: 100%; /* Full width to cover the viewport */
+    height: 100%; /* Full height to cover the viewport */
+    overflow: auto; /* Allow scrolling within the modal if content overflows */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for overlay effect */
+}
+
+/* Modal Content Styles */
+/* Container for the content inside the modal */
+.modal-content {
+    background-color: var(--secondary-color); /* White background for the modal content */
+    color: var(--text-color); /* Dark text color for readability */
+    margin: 10% auto; /* Center the modal content vertically with a margin */
+    padding: 1.25rem; /* Padding inside the modal for spacing */
+    width: 80%; /* Modal content takes up 80% of the screen width */
+    max-width: 31.25rem; /* Limit the maximum width of the modal content */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+    position: relative; /* Allows positioning of child elements like the close button */
+}
+
+/* Close Button */
+/* Styles for the close button inside the modal */
+.close-button {
+    color: #aaa; /* Light gray color for the close button */
+    position: absolute; /* Absolute positioning to place it in the top-right corner */
+    top: 1rem; /* Position the button 1rem from the top */
+    right: 1.25rem; /* Position the button 1.25rem from the right */
+    font-size: 2rem; /* Large font size for the "X" to make it easily clickable */
+    font-weight: bold; /* Bold font weight for emphasis */
+    cursor: pointer; /* Change the cursor to pointer to indicate it's clickable */
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+    color: #000; /* Change the color to black on hover for emphasis */
+}
+
+/* Support Section */
+/* Main container for the Support page */
+.support {
+    padding: 3.75rem 1.25rem; /* Padding for spacing around the section */
+    background-color: var(--secondary-color); /* White background for contrast */
+    text-align: center; /* Center-align content within the section */
+}
+
+.support .container {
+    max-width: 75rem; /* Limit the width of the container for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Support section heading */
+.support h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+/* Support section paragraph */
+.support p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    margin-bottom: 2.5rem; /* Space below the paragraph */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Products Grid */
+/* Flexbox layout for the product grid */
+.products-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the product cards to wrap to the next line if needed */
+    justify-content: space-around; /* Space the cards evenly across the grid */
+}
+
+/* Individual product cards */
+.product-card {
+    background-color: var(--light-accent-color); /* Light gray background for each product card */
+    margin: 1rem; /* Spacing around each product card */
+    flex-basis: 30%; /* Each product card takes up 30% of the available space */
+    max-width: 30%; /* Maximum width for consistency */
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensure content does not overflow the card */
+    text-align: center; /* Center-align content within the product card */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+    transform: translateY(-0.5rem); /* Move the card slightly upwards on hover */
+}
+
+/* Image container for product cards */
+.product-card .card-image {
+    max-height: 28rem; /* Set a maximum height for the product image */
+}
+
+/* Image inside the product card */
+.product-card img {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Product card heading */
+.product-card h3 {
+    font-size: 1.5rem; /* Font size for the product name */
+    margin: 1rem 0 0.5rem 0; /* Spacing above and below the heading */
+    color: var(--text-color); /* Dark text color for readability */
+}
+
+/* Price inside the product card */
+.product-card .price {
+    font-size: 1.25rem; /* Font size for the price text */
+    color: var(--Light-gray-color); /* Light gray color for the price */
+    margin-bottom: 1rem; /* Spacing below the price */
+}
+
+/* Buy Button */
+/* Styles for the "Buy" button inside each product card */
+.buy-button {
+    display: inline-block; /* Display the button as an inline block */
+    margin-bottom: 1.25rem; /* Spacing below the button */
+    padding: 0.5rem 1.25rem; /* Padding inside the button */
+    background-color: var(--primary-color); /* Primary color for the button background */
+    color: var(--secondary-color); /* White text for contrast */
+    text-decoration: none; /* Remove underline from the button text */
+    border-radius: 2rem; /* Rounded corners for a soft, inviting look */
+    transition: background 0.3s; /* Smooth transition for the background color on hover */
+}
+
+/* Hover effect for the buy button */
+.buy-button:hover {
+    background-color: var(--accent-color); /* Change the background color on hover */
+}
+
+/* Donate Section */
+/* Main container for the donate section */
+.donate {
+    padding: 3.75rem 1.25rem; /* Padding for spacing around the section */
+    background-color: var(--primary-color); /* Primary color as the background to draw attention */
+    color: var(--secondary-color); /* White text color for contrast */
+    text-align: center; /* Center-align content within the donate section */
+}
+
+.donate .container {
+    max-width: 50rem; /* Limit the width of the container for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Donate section heading */
+.donate h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+}
+
+/* Donate section description */
+.donate p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    margin-bottom: 2rem; /* Space below the paragraph */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Donate Button */
+/* Styles for the "Donate" button */
+.donate-button {
+    padding: 1rem 2rem; /* Padding inside the button for size */
+    font-size: 1.125rem; /* Button font size */
+    background-color: #ff0080; /* Bright pink background color to stand out */
+    color: var(--secondary-color); /* White text for contrast */
+    text-decoration: none; /* Remove underline from the button text */
+    border-radius: 2rem; /* Rounded corners for a soft, inviting look */
+    transition: background 0.5s; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for the donate button */
+.donate-button:hover {
+    background-color: var(--hove-button-color); /* Change the background color to orange on hover */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
+
+/* About Us Section */
+/* Main container for the About Us section */
+.about-us {
+    padding: 3.75rem 1.25rem; /* Padding for spacing around the section */
+    background-color: var(--light-accent-color); /* Light background color for contrast */
+    color: var(--text-color); /* Default text color */
+}
+
+.about-us .container {
+    max-width: 62.5rem; /* Limit the width of the container for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* About Us heading */
+.about-us h2 {
+    font-size: 2.25rem; /* Large font size for the section heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Primary color for emphasis */
+}
+
+/* About Us paragraph */
+.about-us p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+/* Principles Section */
+/* Flexbox layout for the Principles section */
+.principles {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the principle cards to wrap to the next line if needed */
+    justify-content: space-between; /* Space the principle cards evenly */
+}
+
+/* Individual principle cards */
+.principle {
+    flex-basis: 30%; /* Each principle card takes up 30% of the available space */
+    margin-bottom: 2rem; /* Space below each principle */
+}
+
+/* Principle heading */
+.principle h3 {
+    font-size: 1.5rem; /* Font size for the principle titles */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: var(--primary-color); /* Primary color for emphasis */
+}
+
+/* Principle paragraph and list */
+.principle p, .principle ul {
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.5; /* Increased line height for readability */
+    color: var(--Light-gray-color); /* Light gray color for the text */
+}
+
+/* List of principles */
+.principle ul {
+    list-style: disc; /* Bullet points for the list */
+    padding-left: 1.25rem; /* Padding for indenting the list */
+}
+
+/* Our Story Section */
+.our-story {
+    margin-top: 2.5rem; /* Space above the section */
+}
+
+/* Our Story heading */
+.our-story h2 {
+    font-size: 2rem; /* Large font size for the section heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    color: var(--primary-color); /* Primary color for emphasis */
+}
+
+/* Our Story paragraph */
+.our-story p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Team Section */
+.team {
+    margin-top: 3.75rem; /* Space above the section */
+}
+
+/* Team section heading */
+.team h2 {
+    font-size: 2rem; /* Large font size for the section heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Primary color for emphasis */
+}
+
+/* Team grid layout */
+.team-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the team member cards to wrap to the next line if needed */
+    justify-content: space-around; /* Evenly distribute the team member cards */
+}
+
+/* Individual team member card */
+.team-member {
+    flex-basis: 30%; /* Each team member card takes up 30% of the available space */
+    text-align: center; /* Center-align content within each team member card */
+    margin-bottom: 2rem; /* Space below each card */
+}
+
+/* Team member image */
+.team-member img {
+    width: 12.5rem; /* Set a fixed width for the team member image */
+    height: 12.5rem; /* Set a fixed height for the image */
+    border-radius: 50%; /* Round the image to create a circle */
+    object-fit: cover; /* Ensure the image covers the available space without distortion */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+/* Team member name */
+.team-member h3 {
+    font-size: 1.4rem; /* Font size for the team member's name */
+    margin-bottom: 0.3rem; /* Small space below the name */
+    color: var(--text-color); /* Dark text color for readability */
+}
+
+/* Team member description */
+.team-member p {
+    font-size: 1rem; /* Standard font size for the description */
+    color: var(--Light-gray-color); /* Light gray color for the description */
+}
+
+/* Call to Action Section */
+/* Call to action at the bottom of the About Us page */
+.about-cta {
+    padding: 3.75rem 1.25rem; /* Padding for spacing */
+    background-color: var(--primary-color); /* Primary color for the background to grab attention */
+    color: var(--secondary-color); /* White text color for contrast */
+    text-align: center; /* Center-align the content */
+    margin-top: 3.75rem; /* Space above the section */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+}
+
+/* Call to action heading */
+.about-cta h2 {
+    font-size: 2rem; /* Large font size for the heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    color: var(--secondary-color); /* White text for emphasis */
+}
+
+/* Call to action paragraph */
+.about-cta p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    margin-bottom: 2rem; /* Space below the paragraph */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Call to action button */
+.about-cta .cta-button {
+    padding: 1rem 2rem; /* Padding inside the button for size */
+    font-size: 1.125rem; /* Button font size */
+    background-color: #ff0080; /* Bright pink background color to make the button stand out */
+    color: var(--secondary-color); /* White text for contrast */
+    text-decoration: none; /* Remove underline from the button text */
+    border-radius: 2rem; /* Rounded corners for a soft, inviting look */
+    transition: background 0.5s; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for the call to action button */
+.about-cta .cta-button:hover {
+    background-color: var(--hove-button-color); /* Change background color on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+/* FAQ Section */
+/* Main container for the FAQ section */
+.faq {
+    margin-top: 3.75rem; /* Add spacing above the FAQ section */
+}
+
+/* FAQ section heading */
+.faq h2 {
+    font-size: 2rem; /* Large font size for the section heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Primary color for emphasis */
+}
+
+/* FAQ item container */
+.faq-item {
+    margin-bottom: 1rem; /* Space below each FAQ item */
+}
+
+/* FAQ question styling */
+.faq-question {
+    width: 100%; /* Full width for the question button */
+    padding: 1rem; /* Padding for spacing inside the button */
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    text-align: left; /* Align text to the left */
+    background-color: var(--text-color); /* Dark background for the question button */
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    position: relative; /* Allows positioning of the plus-minus icon */
+    color: var(--secondary-color); /* White text for contrast */
+}
+
+/* Plus/Minus icon for expanding and collapsing FAQ items */
+.faq-question .plus-minus {
+    position: absolute; /* Position it relative to the question */
+    right: 1.25rem; /* Align it to the right side */
+    font-size: 1.5rem; /* Larger font size for visibility */
+}
+
+/* FAQ answer styling */
+.faq-answer {
+    max-height: 0; /* Set initial max-height to 0 (collapsed) */
+    overflow: hidden; /* Hide overflowing content */
+    transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing */
+    background-color: var(--light-accent-color); /* Light background for the answer */
+    padding: 0 1rem; /* Padding on left and right for spacing */
+}
+
+/* Answer paragraph */
+.faq-answer p {
+    padding: 1rem 0; /* Padding for spacing */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+/* Contact Section */
+/* Main container for the Contact section */
+.contact {
+    padding: 3.75rem 1.25rem; /* Padding for internal spacing */
+    background-color: var(--light-accent-color); /* Light accent background color */
+    color: var(--text-color); /* Default text color */
+}
+
+.contact .container {
+    max-width: 35rem; /* Limit the container width for readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Contact section heading */
+.contact h2 {
+    font-size: 2.25rem; /* Large font size for the heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    color: var(--primary-color); /* Use the primary color for the heading */
+}
+
+/* Contact section description */
+.contact p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 2.5rem; /* Space below the description */
+    text-align: center; /* Center-align the paragraph */
+}
+
+/* Contact Form */
+/* Container for the contact form */
+.contact-form {
+    background-color: var(--secondary-color); /* White background for the form */
+    padding: 2.5rem; /* Padding for internal spacing */
+    border-radius: 0.5rem; /* Rounded corners for a soft look */
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 3.75rem; /* Space below the form */
+}
+
+/* Flexbox layout for the form */
+.contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out form elements */
+    flex-direction: column; /* Stack the form elements vertically */
+}
+
+/* Form group styling */
+.form-group {
+    flex-basis: 48%; /* Each form group takes up 48% of the available space */
+    margin-bottom: 1.25rem; /* Space below each form group */
+}
+
+/* Label styling for form inputs */
+.form-group label {
+    display: block; /* Block display to ensure label spans full width */
+    margin-bottom: 0.3rem; /* Space below the label */
+    font-weight: 600; /* Bold font for emphasis */
+}
+
+/* Required asterisk styling */
+.form-group label span {
+    color: var(--primary-color); /* Use primary color for the asterisk */
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width for inputs and textareas */
+    padding: 0.5rem; /* Padding for spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 0.25rem; /* Subtle rounded corners */
+}
+
+/* Textarea specific styling */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing for textareas */
+}
+
+/* Submit button styling */
+.submit-button {
+    padding: 1rem 2rem; /* Padding inside the button for size */
+    background-color: var(--primary-color); /* Primary color for the button background */
+    color: var(--secondary-color); /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 2rem; /* Rounded corners for a soft look */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background 0.3s; /* Smooth transition for background color on hover */
+    font-size: 1.125rem; /* Button font size */
+    margin: 0 auto; /* Center the button */
+    display: block; /* Ensure the button is block-level */
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: var(--accent-color); /* Change background color on hover */
+}
+
+/* Volunteer Information Section */
+/* Main container for volunteer information */
+.volunteer-info {
+    text-align: center; /* Center-align the content */
+    margin-bottom: 3.75rem; /* Space below the section */
+}
+
+/* Volunteer section heading */
+.volunteer-info h2 {
+    font-size: 2rem; /* Large font size for the heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    color: var(--primary-color); /* Use primary color for the heading */
+}
+
+/* Volunteer section description */
+.volunteer-info p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 2rem; /* Space below the description */
+}
+
+/* Volunteer button styling */
+.volunteer-button {
+    padding: 1rem 2rem; /* Padding inside the button for size */
+    background-color: var(--primary-color); /* Primary color for the button background */
+    color: var(--secondary-color); /* White text for contrast */
+    text-decoration: none; /* Remove underline from the button text */
+    border-radius: 2rem; /* Rounded corners for a soft look */
+    transition: background 0.3s; /* Smooth transition for background color on hover */
+    font-size: 1.125rem; /* Button font size */
+}
+
+/* Hover effect for volunteer button */
+.volunteer-button:hover {
+    background-color: var(--accent-color); /* Change background color on hover */
+}
+
+/* Contact Details Section */
+/* Main container for contact details */
+.contact-details {
+    background-color: var(--secondary-color); /* White background for contrast */
+    padding: 2.5rem; /* Padding for internal spacing */
+    border-radius: 0.5rem; /* Rounded corners for a soft look */
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align the content */
+    margin-bottom: 3.75rem; /* Space below the section */
+}
+
+/* Contact details heading */
+.contact-details h2 {
+    font-size: 2rem; /* Large font size for the heading */
+    margin-bottom: 1.25rem; /* Space below the heading */
+    color: var(--primary-color); /* Use primary color for the heading */
+}
+
+/* Contact details text */
+.contact-details p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 0.5rem; /* Space below the paragraph */
+}
+
+/* Bold text for strong emphasis */
+.contact-details strong {
+    font-weight: 600; /* Bold text for emphasis */
+}
+
+/* Error Message Styles */
+/* Styling for form error messages */
+.error-message {
+    color: var(--primary-color); /* Error messages use the primary color */
+    margin-top: 0.3rem; /* Space above the error message */
+    display: none; /* Hidden by default, shown when an error occurs */
+}
+
+/* Input fields with errors */
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: var(--primary-color); /* Highlight invalid inputs with the primary color */
+}
+
+/* 404 Not Found Page Styles */
+/* Main container for the 404 Not Found page */
+.not-found {
+    padding: 4.5rem 0; /* Padding for spacing around the section */
+    text-align: center; /* Center-align content for the 404 page */
+    color: var(--text-color); /* Default text color for readability */
+    background-color: var(--secondary-color); /* White background */
+}
+
+/* 404 Not Found heading */
+.not-found h2 {
+    font-size: var(--font-size-xxlarge); /* Extra-large font size for the 404 heading */
+    margin-bottom: var(--spacing-unit * 1.25); /* Space below the heading */
+    color: var(--heading-color); /* Use heading color for emphasis */
+}
+
+/* 404 Not Found description */
+.not-found p {
+    font-size: var(--font-size-base); /* Default font size for the description */
+    margin-bottom: var(--spacing-unit * 1.25); /* Space below the paragraph */
+    line-height: var(--line-height); /* Increased line height for readability */
+}
+
+/* Image styling for the 404 page */
+.not-found-image {
+    width: 21rem; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: var(--spacing-unit * 1.25); /* Space below the image */
+}
+
+/* Button styling for the 404 page */
+.not-found-buttons .button {
+    margin: var(--spacing-unit * 0.5); /* Add margin between the buttons */
+}
+
+/* The Cube */
+/* 3D rotating cube container */
+.cube {
+    position: relative; /* Position relative to allow stacking of sides */
+    margin: 3rem auto; /* Center the cube horizontally with spacing above and below */
+    width: 6.25rem; /* Fixed width for the cube */
+    height: 6.25rem; /* Fixed height for the cube */
+    transform-style: preserve-3d; /* Maintain the 3D effect during transformation */
+    animation: rotate 5s infinite linear; /* Apply continuous rotation animation */
+}
+
+/* Keyframes for rotating the cube */
+@keyframes rotate {
+    0% {
+        transform: rotateX(0) rotateY(0); /* Initial state, no rotation */
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg); /* Full rotation along both axes */
+    }
+}
+
+/* Individual sides of the cube */
+.cube .side {
+    position: absolute; /* Position each side absolutely within the cube */
+    padding: 1rem; /* Padding inside each cube face */
+    width: 6.25rem; /* Match the width of the cube */
+    height: 6.25rem; /* Match the height of the cube */
+    border: 2px solid black; /* Border for each side */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    font-size: 16px; /* Standard font size for cube text */
+}
+
+/* Matrix transformations for 3D positioning of each face */
+.front {
+    transform: translateZ(50px); /* Position the front face in 3D space */
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px); /* Position the back face */
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px); /* Position the right face */
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px); /* Position the left face */
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px); /* Position the top face */
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px); /* Position the bottom face */
+}
+
+/* Footer Styles */
+/* Footer container */
+footer {
+    background: linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080); /* Gradient background for the footer */
+    text-align: center; /* Center-align text in the footer */
+    padding: 1rem; /* Padding for internal spacing */
+}
+
+/* Footer text */
+footer p {
+    margin: 0; /* Remove default margins */
+    color: var(--secondary-color); /* White text for contrast */
+}
+
+/* Responsive Design for max-width 1024px */
+@media (max-width: 1024px) {
+    /* Shared layout for multiple pages */
+    .product-card,
+    .cat-card {
+        flex-basis: 45%; /* Cards for products and cats will take up 45% of the available width */
+        max-width: 45%; /* Limit the maximum width to 45% to ensure consistency */
+    }
+
+    .principle,
+    .team-member {
+        flex-basis: 45%; /* Principle and team member cards take up 45% of the available width */
+    }
+}
+
+/* Responsive Design for max-width 768px */
+@media (max-width: 768px) {
+    /* Hero content text sizes */
+    .hero-content h2 {
+        font-size: 2.25rem; /* Reduce the font size for the hero heading for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1.125rem; /* Reduce the paragraph font size for better readability on smaller screens */
+    }
+
+    /* Mobile navigation links and burger menu */
+    .nav-links {
+        display: none; /* Initially hide the navigation links on smaller screens */
+        flex-direction: column; /* Stack the links vertically for a mobile-friendly layout */
+        width: 100%; /* Make the navigation links take up the full width */
+        background-color: var(--primary-color); /* Set the background color to the primary color */
+        position: absolute; /* Position the nav links below the header */
+        top: 4.4rem; /* Position the nav links at the right height under the header */
+        left: 0; /* Align the navigation links to the left edge */
+    }
+
+    .nav-links li {
+        margin: 1.25rem 0; /* Add spacing between each navigation link */
+        text-align: center; /* Center-align the navigation text */
+    }
+
+    .burger {
+        display: flex; /* Display the burger menu icon on smaller screens */
+    }
+
+    .nav-active {
+        display: flex; /* When the navigation is active, show the nav links */
+    }
+
+    /* Burger Animation */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-0.3rem, 0.375rem); /* Rotate the first line of the burger menu to form part of an "X" */
+    }
+
+    .toggle .line2 {
+        opacity: 0; /* Hide the middle line of the burger menu */
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-0.3rem, -0.375rem); /* Rotate the third line of the burger menu to complete the "X" */
+    }
+
+    /* Adjust Grid Layouts for smaller screens */
+    .facts-grid,
+    .stats-grid {
+        flex-direction: column; /* Stack the grid items vertically for better display on small screens */
+        align-items: center; /* Center-align the grid items */
+    }
+
+    .fact,
+    .stat {
+        flex-basis: 80%; /* Set each fact and stat to take up 80% of the available width */
+    }
+
+    /* Shared layout for multiple pages on small screens */
+    .product-card,
+    .cat-card,
+    .principle,
+    .team-member {
+        flex-basis: 100%; /* Make product, cat, principle, and team member cards take up the full width */
+        max-width: 100%; /* Ensure each card takes up the full width of the container */
+    }
+
+    /* Limit the max width for principle and team-member cards */
+    .principle,
+    .team-member {
+        max-width: 31.25rem; /* Set a maximum width for these cards to maintain readability */
+    }
+
+    /* Contact form adjustments */
+    .form-group {
+        flex-basis: 100%; /* Make form input fields take up the full width on smaller screens */
+    }
+}
+
+/* Nav Animation */
+/* Keyframes for fading in navigation links */
+@keyframes navLinkFade {
+    from {
+        opacity: 0; /* Start with the navigation links being fully transparent (invisible) */
+        transform: translateX(3.125rem); /* Move the links 3.125rem (50px) to the right, off-screen */
+    }
+
+    to {
+        opacity: 1; /* Fade the links to fully visible */
+        transform: translateX(0); /* Move the links to their original position (no translation) */
+    }
+}
