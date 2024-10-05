@@ -27,6 +27,7 @@
     <header>
       <div class="logo">
         <a href="index.html">
+          <!-- using font-icons from https://pictogrammers.com/library/mdi/ -->
           <h1><span class="mdi mdi-cat"></span>Cold Noses</h1>
         </a>
       </div>
@@ -51,18 +52,23 @@
       <div class="hero-content">
         <h2>Welcome to Cold Noses</h2>
         <p>Caring for cats, one cold nose at a time.</p>
+        <!-- Doing a redirection by JavaScript as HTML redirection alternative. -->
         <button onclick="learnMore()">Learn More</button>
       </div>
     </section>
 
     <!-- Gallery Section -->
+     <!-- In this section will be loaded dynamically all the images from Thecatapi.com
+     url https://thecatapi.com/ -->
     <section class="gallery">
       <div id="grid" class="image-grid">
       </div>
     </section>
 
     <!-- Introduction Section -->
+     <!-- Using sections to separate all the pages sections -->
     <section class="introduction">
+      <!-- using container class as generic container for content -->
       <div class="container">
         <h2>About Us</h2>
         <p>
@@ -76,8 +82,10 @@
 
     <!-- Fun Facts Section -->
     <section class="fun-facts">
+      <!-- ditto -->
       <div class="container">
         <h2>Fun Facts About Cats</h2>
+        <!-- creating a grid for the fun facts tiles -->
         <div class="facts-grid">
           <div class="fact">
             <br>
@@ -117,6 +125,7 @@
     <section class="statistics">
       <div class="container">
         <h2>Cat Statistics</h2>
+        <!-- creating a grid for the statistics facts tiles -->
         <div class="stats-grid">
           <div class="stat">
             <h3>1000+</h3>

@@ -195,6 +195,7 @@ nav {
 }
 
 .fact {
+    color: var(--text-color);
     background-color: var(--secondary-color);
     padding: 1.25rem;
     margin: 0.5rem;
