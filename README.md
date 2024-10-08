@@ -21,5 +21,5 @@ A simple website that displays random cat images using The Cat API. Deployed on 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/cat-gallery-website.git
-   cd cat-gallery-website
+   git clone https://github.com/Joel-Tola/catcatgo.git
+   cd catcatgo
